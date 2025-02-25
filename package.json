@@ -1,0 +1,13 @@
+{
+    "name": "monorepo",
+    "private": true,
+    "packageManager": "pnpm@9.15.4",
+    "scripts": {
+        "preview:host": "pnpm --filter @rolldown-vite-module-federation-example/host run preview",
+        "preview:remote": "pnpm --filter @rolldown-vite-module-federation-example/remote run preview",
+        "preview": "npm-run-all -l --parallel preview:remote preview:host"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5"
+    }
+}

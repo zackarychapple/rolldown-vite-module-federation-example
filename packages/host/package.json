@@ -1,0 +1,16 @@
+{
+    "name": "@rolldown-vite-module-federation-example/host",
+    "private": true,
+    "scripts": {
+        "build": "vite build",
+        "preview": "vite build && vite preview"
+    },
+    "devDependencies": {
+        "vite": "catalog:"
+    },
+    "dependencies": {
+        "@module-federation/runtime": "catalog:",
+        "react": "catalog:",
+        "react-dom": "catalog:"
+    }
+}
