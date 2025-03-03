@@ -1,6 +1,7 @@
 {
-    "name": "@rolldown-vite-module-federation-example/host",
+    "name": "rolldown-host",
     "private": true,
+    "version": "0.0.1",
     "scripts": {
         "build": "vite build",
         "preview": "vite build && vite preview"
@@ -11,6 +12,7 @@
     "dependencies": {
         "@module-federation/runtime": "catalog:",
         "react": "catalog:",
-        "react-dom": "catalog:"
+        "react-dom": "catalog:",
+        "zephyr-rolldown-plugin": "catalog:"
     }
 }

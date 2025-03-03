@@ -1,13 +1,17 @@
 {
-    "name": "monorepo",
+    "name": "rolldown-mf-monorepo",
+    "version": "0.0.1",
     "private": true,
     "packageManager": "pnpm@9.15.4",
     "scripts": {
-        "preview:host": "pnpm --filter @rolldown-vite-module-federation-example/host run preview",
-        "preview:remote": "pnpm --filter @rolldown-vite-module-federation-example/remote run preview",
+        "preview:host": "pnpm --filter rolldown-host run preview",
+        "preview:remote": "pnpm --filter rolldown-remote run preview",
         "preview": "npm-run-all -l --parallel preview:remote preview:host"
     },
     "devDependencies": {
         "npm-run-all": "^4.1.5"
+    },
+    "dependencies": {
+        "zephyr-rolldown-plugin": "^0.0.35"
     }
 }

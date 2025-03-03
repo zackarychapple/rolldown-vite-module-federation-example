@@ -1,4 +1,5 @@
 import { defineConfig, moduleFederationPlugin } from 'vite'
+import { withZephyr } from 'zephyr-rolldown-plugin';
 
 export default defineConfig({
     preview: {
@@ -23,7 +24,8 @@ export default defineConfig({
                     },
                     manifest: true,
                     getPublicPath: 'http://localhost:5176/',
-                })
+                }),
+                withZephyr(),
             ]
         },
     }

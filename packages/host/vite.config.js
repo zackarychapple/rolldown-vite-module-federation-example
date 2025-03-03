@@ -1,4 +1,5 @@
 import { defineConfig, moduleFederationPlugin } from 'vite'
+import { withZephyr } from 'zephyr-rolldown-plugin';
 
 export default defineConfig({
     define: {
@@ -24,7 +25,8 @@ export default defineConfig({
                             singleton: true,
                         },
                     },
-                })
+                }),
+                withZephyr(),
             ]
         },
     }

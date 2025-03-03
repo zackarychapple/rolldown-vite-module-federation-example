@@ -1,5 +1,6 @@
 {
-    "name": "@rolldown-vite-module-federation-example/remote",
+    "name": "rolldown-remote",
+    "version": "0.0.1",
     "private": true,
     "scripts": {
         "build": "vite build",
@@ -10,6 +11,7 @@
     },
     "dependencies": {
         "@module-federation/runtime": "catalog:",
-        "react": "catalog:"
+        "react": "catalog:",
+        "zephyr-rolldown-plugin": "catalog:"
     }
 }
